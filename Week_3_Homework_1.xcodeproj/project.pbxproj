@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3835352955E6CC00D0FAE8 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3835342955E6CC00D0FAE8 /* Delegate.swift */; };
 		2A5ABD8B2953C6360062B0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD8A2953C6360062B0BA /* AppDelegate.swift */; };
 		2A5ABD8D2953C6360062B0BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD8C2953C6360062B0BA /* SceneDelegate.swift */; };
 		2A5ABD8F2953C6360062B0BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABD8E2953C6360062B0BA /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3835342955E6CC00D0FAE8 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 		2A5ABD872953C6360062B0BA /* Week_3_Homework_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week_3_Homework_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5ABD8A2953C6360062B0BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A5ABD8C2953C6360062B0BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				2A5ABD8A2953C6360062B0BA /* AppDelegate.swift */,
 				2A5ABD8C2953C6360062B0BA /* SceneDelegate.swift */,
+				2A3835342955E6CC00D0FAE8 /* Delegate.swift */,
 				2A5ABD8E2953C6360062B0BA /* ViewController.swift */,
 				2AE912662955C0E300F1A344 /* SecondViewController.swift */,
 				2A5ABD902953C6360062B0BA /* Main.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				2AE912672955C0E400F1A344 /* SecondViewController.swift in Sources */,
 				2A5ABD8F2953C6360062B0BA /* ViewController.swift in Sources */,
+				2A3835352955E6CC00D0FAE8 /* Delegate.swift in Sources */,
 				2A5ABD8B2953C6360062B0BA /* AppDelegate.swift in Sources */,
 				2A5ABD8D2953C6360062B0BA /* SceneDelegate.swift in Sources */,
 			);
