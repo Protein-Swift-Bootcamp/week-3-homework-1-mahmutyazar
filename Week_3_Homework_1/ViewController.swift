@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, NameSurnameDelegate, AgeDelegate, CountryDelegate {
+class ViewController: UIViewController {
    
         
     @IBOutlet weak var nameSurnameLabel: UILabel!
@@ -17,7 +17,7 @@ class ViewController: UIViewController, NameSurnameDelegate, AgeDelegate, Countr
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
     
@@ -30,6 +30,9 @@ class ViewController: UIViewController, NameSurnameDelegate, AgeDelegate, Countr
         vc.delegate3 = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
+}
+
+extension ViewController: NameSurnameDelegate {
     
     func nameSurnameReady(data: String) {
         nameSurnameLabel.text = (data)
@@ -38,7 +41,9 @@ class ViewController: UIViewController, NameSurnameDelegate, AgeDelegate, Countr
             nameSurnameLabel.text = "Name Surname"
         }
     }
-    
+}
+
+extension ViewController: AgeDelegate {
     func ageReady(data: String) {
         ageLabel.text = (data)
         
@@ -46,13 +51,13 @@ class ViewController: UIViewController, NameSurnameDelegate, AgeDelegate, Countr
             ageLabel.text = "Age"
         }
     }
-    
+}
+
+extension ViewController: CountryDelegate {
     func countryReady(data: String) {
         countryLabel.text = (data)
         if data == "" {
             countryLabel.text = "Country"
         }
-        
     }
-    
 }
