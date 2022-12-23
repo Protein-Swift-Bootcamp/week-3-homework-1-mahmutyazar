@@ -47,6 +47,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Go"/>
                                 <connections>
                                     <action selector="goButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dc-Q3-wgQ"/>
+                                    <segue destination="zU1-ee-9vH" kind="show" identifier="toSecondVC" id="eVQ-e4-p7G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,6 +63,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="90.769230769230759" y="-34.123222748815166"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="jze-30-qWg">
+            <objects>
+                <viewController id="zU1-ee-9vH" customClass="SecondViewController" customModule="Week_3_Homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ch9-iT-7Qg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="a9m-Q1-Amg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d6c-89-scl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hbi-9B-uOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="-34"/>
         </scene>
     </scenes>
     <resources>

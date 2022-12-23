@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func goButton(_ sender: Any) {
-        
+        performSegue(withIdentifier: "toSecondVC", sender: nil)
     }
     
 }
