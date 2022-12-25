@@ -7,14 +7,8 @@
 
 import Foundation
 
-protocol NameSurnameDelegate: AnyObject {
+protocol Delegate: AnyObject {
     func nameSurnameReady(data: String)
-}
-
-protocol AgeDelegate: AnyObject {
     func ageReady(data: String)
-}
-
-protocol CountryDelegate: AnyObject {
     func countryReady(data: String)
 }

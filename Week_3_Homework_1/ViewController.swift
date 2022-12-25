@@ -25,14 +25,12 @@ class ViewController: UIViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "SecondVCID") as! SecondViewController
         vc.title = "Personal Information"
-        vc.delegate1 = self
-        vc.delegate2 = self
-        vc.delegate3 = self
+        vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
-extension ViewController: NameSurnameDelegate {
+extension ViewController: Delegate {
     
     func nameSurnameReady(data: String) {
         nameSurnameLabel.text = (data)
@@ -41,9 +39,7 @@ extension ViewController: NameSurnameDelegate {
             nameSurnameLabel.text = "Name Surname"
         }
     }
-}
-
-extension ViewController: AgeDelegate {
+    
     func ageReady(data: String) {
         ageLabel.text = (data)
         
@@ -51,13 +47,14 @@ extension ViewController: AgeDelegate {
             ageLabel.text = "Age"
         }
     }
-}
-
-extension ViewController: CountryDelegate {
+    
     func countryReady(data: String) {
         countryLabel.text = (data)
+        
         if data == "" {
             countryLabel.text = "Country"
         }
     }
+    
+    
 }
